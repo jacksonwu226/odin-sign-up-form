@@ -28,12 +28,9 @@ body {
     justify-content: space-between;
     color: white;
     text-align: center;
+
+    flex:2;
 }
-
-/* a{
-    color: white;
-} */
-
 .banner{
     display: flex;
     justify-content: center;
@@ -41,7 +38,7 @@ body {
     font-size: 5.5rem;
     font-family: "Norse Bold";
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 16px ;
+    padding: 16px;
     margin-top: 20vh;
 }
 .banner > img{
@@ -49,4 +46,92 @@ body {
 }
 .img-reference > a{
     color: white;
+}
+.text-form-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(248, 248, 248);
+    flex:5;
+}
+.text-form-section > h3{
+    margin-left: var(--left-space);
+    width: 70%;
+}
+.sign-up-section{
+    background-color: white;
+    box-shadow: 0 4px 4px 1px rgba(0,0,0,0.2);
+    margin-top: 32px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    flex: 1;
+}
+.sign-up-section>h3{
+    margin: 0;
+}
+.data-input-section label{
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1px;
+}
+.data-input-section input {
+    box-sizing: border-box;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: 100%;
+    font-size: 1rem;
+    margin:0;
+    margin-right: 32px;
+}
+.sign-up-section h3 {
+    margin-left: var(--left-space);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .data-input-section>div{
+    margin-left: var(--left-space);
+    display: flex;
+    width: calc(100% - var(--left-space));
+    gap: 84px;
+    margin-bottom: 20px;
+  }
+.data-input-section label{
+    display: block;
+}
+input:invalid{
+    border: 1px solid red;
+}
+
+input:focus{
+    outline: none !important;
+    border: 1px solid rgb(31, 100, 248);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+input{
+    transition: all 0.3s;
+}
+
+#create-account{
+    margin-left: var(--left-space);
+    margin-top: 32px;
+    border: none;
+    background-color: rgb(230, 149, 0);
+    padding: 12px 48px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 1px rgba(0,0,0,0.2);
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.login-prompt{
+    margin-top: 40px;
+    margin-left: var(--left-space);
+}
+.login-prompt>a{
+    color: rgb(230, 149, 0);
+    text-decoration: none;
 }
